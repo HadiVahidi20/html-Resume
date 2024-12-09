@@ -1,4 +1,125 @@
-h2{color: rgb(255, 255, 255);background-color: #8EACCD; font-family: "Anton", sans-serif;}
-html{background-color:#D2E0FB;} 
-h1{text-align: center;}
-p{text-align: justify;}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 3em;
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 2em;
+    color: #16a085;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+/* Profile Section */
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+div img {
+    border-radius: 50%;
+    border: 4px solid #16a085;
+    margin-right: 20px;
+}
+
+/* Paragraph and List Style */
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Key Skills and Employment History */
+ul li {
+    color: #555;
+}
+
+ul li::before {
+    content: '✔️';
+    margin-right: 10px;
+    color: #16a085;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #16a085;
+}
+
+/* Sections */
+hr {
+    border: 1px solid #16a085;
+    margin-top: 30px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    ul li {
+        font-size: 1em;
+    }
+}
